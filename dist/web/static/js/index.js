@@ -38170,12 +38170,26 @@ var ImagesList_ImagesList = /*#__PURE__*/function (_React$Component) {
       var _this3 = this;
 
       e.preventDefault();
+      var allowedExtensions = /(\.zip)$/i;
 
-      if (e.dataTransfer.files.length) {
-        var loader = new utils_LocalImagesLoader();
-        loader.load(e.dataTransfer.files, null, function (data) {
-          return _this3.loadImagesComplete(data);
-        });
+      if (allowedExtensions.exec(e.dataTransfer.files[0].name)) {
+        var file = e.dataTransfer.files[0];
+
+        if (file) {
+          Observer.emit(GLOBAL_EVENT.SHOW_SHADER);
+          var loader = new utils_ZipLoader();
+          loader.load(file, null, function (data) {
+            return _this3.loadImagesComplete(data);
+          });
+        }
+      } else {
+        if (e.dataTransfer.files.length) {
+          var _loader = new utils_LocalImagesLoader();
+
+          _loader.load(e.dataTransfer.files, null, function (data) {
+            return _this3.loadImagesComplete(data);
+          });
+        }
       }
 
       return false;
