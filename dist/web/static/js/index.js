@@ -51289,7 +51289,7 @@ function (_React$Component) {
       }, react_default.a.createElement("div", {
         className: "main-header-app-name"
       }, react_default.a.createElement("img", {
-        src: "static/images/logo.png"
+        src: "static/images/r5ricon.png"
       }), package_0.displayName, " ", package_0.version), react_default.a.createElement("div", {
         className: "main-header-about",
         onClick: this.showAbout

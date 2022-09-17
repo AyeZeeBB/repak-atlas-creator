@@ -237,6 +237,36 @@ html, body {
     transform: scale(0.95);
 }
 
+.btnexport {
+    border-width: 1px;
+    border-style: solid;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px;
+    display: inline-block;
+    font-weight: bold;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 90%;
+    height: 12px;
+}
+
+.btnexport:active {
+    transform: scale(0.95);
+}
+
 .edit-btn {
     border-width: 1px;
     border-style: solid;
@@ -640,11 +670,11 @@ html, body {
 }
 
 .about-logo {
-    width: 44px;
+    width: 50px;
     height: 50px;
-    background-image: url(../images/logo_black.png);
+    background-image: url(../images/r5ricon.png);
     background-repeat: no-repeat;
-    background-size: 44px 50px;
+    background-size: 50px 50px;
     float: left;
     margin-left: 4px;
     margin-right: 16px;

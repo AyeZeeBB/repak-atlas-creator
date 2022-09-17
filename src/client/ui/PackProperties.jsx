@@ -268,62 +268,6 @@ class PackProperties extends React.Component {
                 <div className="pack-properties-containter">
                     <table>
                         <tbody>
-                            <tr title={I18.f("TEXTURE_NAME_TITLE")}>
-                                <td>{I18.f("TEXTURE_NAME")}</td>
-                                <td><input ref="textureName" type="text" className="border-color-gray" defaultValue={this.packOptions.textureName} onBlur={this.onExporterPropChanged} /></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("TEXTURE_FORMAT_TITLE")}>
-                                <td>{I18.f("TEXTURE_FORMAT")}</td>
-                                <td>
-                                    <select ref="textureFormat" className="border-color-gray" defaultValue={this.packOptions.textureFormat} onChange={this.onExporterChanged}>
-                                        <option value="png">png</option>
-                                        <option value="jpg">jpg</option>
-                                    </select>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("REMOVE_FILE_EXT_TITLE")}>
-                                <td>{I18.f("REMOVE_FILE_EXT")}</td>
-                                <td><input ref="removeFileExtension" className="border-color-gray" type="checkbox" defaultChecked={this.packOptions.removeFileExtension ? "checked" : ""} onChange={this.onExporterPropChanged} /></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("PREPEND_FOLDER_TITLE")}>
-                                <td>{I18.f("PREPEND_FOLDER")}</td>
-                                <td><input ref="prependFolderName" className="border-color-gray" type="checkbox" defaultChecked={this.packOptions.prependFolderName ? "checked" : ""} onChange={this.onExporterPropChanged} /></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("BASE64_EXPORT_TITLE")}>
-                                <td>{I18.f("BASE64_EXPORT")}</td>
-                                <td><input ref="base64Export" className="border-color-gray" type="checkbox" defaultChecked={this.packOptions.base64Export ? "checked" : ""} onChange={this.onExporterPropChanged} /></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("TINIFY_TITLE")}>
-                                <td>{I18.f("TINIFY")}</td>
-                                <td><input ref="tinify" className="border-color-gray" type="checkbox" defaultChecked={this.packOptions.tinify ? "checked" : ""} onChange={this.onExporterPropChanged} /></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("TINIFY_KEY_TITLE")}>
-                                <td>{I18.f("TINIFY_KEY")}</td>
-                                <td><input ref="tinifyKey" type="text" className="border-color-gray" defaultValue={this.packOptions.tinifyKey} onBlur={this.onExporterPropChanged} /></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("SCALE_TITLE")}>
-                                <td>{I18.f("SCALE")}</td>
-                                <td><input ref="scale" type="number" min="0" className="border-color-gray" defaultValue={this.packOptions.scale} onBlur={this.onPropChanged}/></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("FILTER_TITLE")}>
-                                <td>{I18.f("FILTER")}</td>
-                                <td>
-                                    <select ref="filter" className="border-color-gray" onChange={this.onExporterChanged} defaultValue={this.packOptions.filter}>
-                                        {filters.map(node => {
-                                            return (<option key={"filter-" + node.type} defaultValue={node.type}>{node.type}</option>)
-                                        })}
-                                    </select>
-                                </td>
-                                <td></td>
-                            </tr>
                             <tr title={I18.f("FORMAT_TITLE")}>
                                 <td>{I18.f("FORMAT")}</td>
                                 <td>
@@ -342,19 +286,21 @@ class PackProperties extends React.Component {
                                 <td><input ref="fileName" className="border-color-gray" type="text" defaultValue={this.packOptions.fileName} onBlur={this.onExporterPropChanged} /></td>
                                 <td></td>
                             </tr>
-                            <tr title={I18.f("SAVE_PATH_TITLE")} style={{display: PLATFORM === 'electron' ? '' : 'none'}}>
-                                <td>{I18.f("SAVE_PATH")}</td>
-                                <td><input ref="savePath" className="border-color-gray" type="text" defaultValue={this.packOptions.savePath} onBlur={this.onExporterPropChanged} /></td>
+                            <tr title={I18.f("TEXTURE_NAME_TITLE")}>
+                                <td>{I18.f("TEXTURE_NAME")}</td>
+                                <td><input ref="textureName" type="text" className="border-color-gray" defaultValue={this.packOptions.textureName} onBlur={this.onExporterPropChanged} /></td>
+                                <td></td>
+                            </tr>
+                            <tr title={I18.f("TEXTURE_FORMAT_TITLE")}>
+                                <td>{I18.f("TEXTURE_FORMAT")}</td>
                                 <td>
-                                    <div className="folder-btn back-800" onClick={this.selectSavePath}></div>
+                                    <select ref="textureFormat" className="border-color-gray" defaultValue={this.packOptions.textureFormat} onChange={this.onExporterChanged}>
+                                        <option value="png">png</option>
+                                        <option value="jpg">jpg</option>
+                                    </select>
                                 </td>
+                                <td></td>
                             </tr>
-                            <tr>
-                                <td colSpan="3" className="center-align">
-                                    <div className="btn back-800 border-color-gray color-white" onClick={this.startExport}>{I18.f("EXPORT")}</div>
-                                </td>
-                            </tr>
-                            
                             <tr title={I18.f("WIDTH_TITLE")}>
                                 <td>{I18.f("WIDTH")}</td>
                                 <td><input ref="width" type="number" min="0" className="border-color-gray" defaultValue={this.packOptions.width} onBlur={this.onPropChanged} onKeyDown={this.forceUpdate}/></td>
@@ -365,14 +311,9 @@ class PackProperties extends React.Component {
                                 <td><input ref="height" type="number" min="0" className="border-color-gray" defaultValue={this.packOptions.height} onBlur={this.onPropChanged} onKeyDown={this.forceUpdate}/></td>
                                 <td></td>
                             </tr>
-                            <tr title={I18.f("FIXED_SIZE_TITLE")}>
-                                <td>{I18.f("FIXED_SIZE")}</td>
-                                <td><input ref="fixedSize" type="checkbox" className="border-color-gray" onChange={this.onPropChanged} defaultChecked={this.packOptions.fixedSize ? "checked" : ""} /></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("POWER_OF_TWO_TITLE")}>
-                                <td>{I18.f("POWER_OF_TWO")}</td>
-                                <td><input ref="powerOfTwo" type="checkbox" className="border-color-gray" onChange={this.onPropChanged} defaultChecked={this.packOptions.powerOfTwo ? "checked" : ""} /></td>
+                            <tr title={I18.f("SCALE_TITLE")}>
+                                <td>{I18.f("SCALE")}</td>
+                                <td><input ref="scale" type="number" min="0" className="border-color-gray" defaultValue={this.packOptions.scale} onBlur={this.onPropChanged}/></td>
                                 <td></td>
                             </tr>
                             <tr title={I18.f("PADDING_TITLE")}>
@@ -385,6 +326,67 @@ class PackProperties extends React.Component {
                                 <td><input ref="extrude" type="number" className="border-color-gray" defaultValue={this.packOptions.extrude} min="0" onInput={this.onPropChanged} onKeyDown={this.forceUpdate}/></td>
                                 <td></td>
                             </tr>
+                            <tr title={I18.f("ALPHA_THRESHOLD_TITLE")}>
+                                <td>{I18.f("ALPHA_THRESHOLD")}</td>
+                                <td><input ref="alphaThreshold" type="number" className="border-color-gray" defaultValue={this.packOptions.alphaThreshold} min="0" max="255" onBlur={this.onPropChanged} onKeyDown={this.forceUpdate}/></td>
+                                <td></td>
+                            </tr>
+                            <tr title={I18.f("FILTER_TITLE")}>
+                                <td>{I18.f("FILTER")}</td>
+                                <td>
+                                    <select ref="filter" className="border-color-gray" onChange={this.onExporterChanged} defaultValue={this.packOptions.filter}>
+                                        {filters.map(node => {
+                                            return (<option key={"filter-" + node.type} defaultValue={node.type}>{node.type}</option>)
+                                        })}
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <br></br>
+                            <tr title={I18.f("TINIFY_TITLE")}>
+                                <td>{I18.f("TINIFY")}</td>
+                                <td><input ref="tinify" className="border-color-gray" type="checkbox" defaultChecked={this.packOptions.tinify ? "checked" : ""} onChange={this.onExporterPropChanged} /></td>
+                                <td></td>
+                            </tr>
+                            <tr title={I18.f("TINIFY_KEY_TITLE")}>
+                                <td>{I18.f("TINIFY_KEY")}</td>
+                                <td><input ref="tinifyKey" type="text" className="border-color-gray" defaultValue={this.packOptions.tinifyKey} onBlur={this.onExporterPropChanged} /></td>
+                                <td></td>
+                            </tr>
+                            <br></br>
+                            <tr title={I18.f("REMOVE_FILE_EXT_TITLE")}>
+                                <td>{I18.f("REMOVE_FILE_EXT")}</td>
+                                <td><input ref="removeFileExtension" className="border-color-gray" type="checkbox" defaultChecked={this.packOptions.removeFileExtension ? "checked" : ""} onChange={this.onExporterPropChanged} /></td>
+                                <td></td>
+                            </tr>
+                            <tr title={I18.f("PREPEND_FOLDER_TITLE")}>
+                                <td>{I18.f("PREPEND_FOLDER")}</td>
+                                <td><input ref="prependFolderName" className="border-color-gray" type="checkbox" defaultChecked={this.packOptions.prependFolderName ? "checked" : ""} onChange={this.onExporterPropChanged} /></td>
+                                <td></td>
+                            </tr>
+                            <tr title={I18.f("BASE64_EXPORT_TITLE")}>
+                                <td>{I18.f("BASE64_EXPORT")}</td>
+                                <td><input ref="base64Export" className="border-color-gray" type="checkbox" defaultChecked={this.packOptions.base64Export ? "checked" : ""} onChange={this.onExporterPropChanged} /></td>
+                                <td></td>
+                            </tr>
+                            
+                            <tr title={I18.f("DETECT_IDENTICAL_TITLE")}>
+                                <td>{I18.f("DETECT_IDENTICAL")}</td>
+                                <td><input ref="detectIdentical" type="checkbox" className="border-color-gray" onChange={this.onPropChanged} defaultChecked={this.packOptions.detectIdentical ? "checked" : ""}/></td>
+                                <td></td>
+                            </tr>
+                            
+                            <tr title={I18.f("FIXED_SIZE_TITLE")}>
+                                <td>{I18.f("FIXED_SIZE")}</td>
+                                <td><input ref="fixedSize" type="checkbox" className="border-color-gray" onChange={this.onPropChanged} defaultChecked={this.packOptions.fixedSize ? "checked" : ""} /></td>
+                                <td></td>
+                            </tr>
+                            <tr title={I18.f("POWER_OF_TWO_TITLE")}>
+                                <td>{I18.f("POWER_OF_TWO")}</td>
+                                <td><input ref="powerOfTwo" type="checkbox" className="border-color-gray" onChange={this.onPropChanged} defaultChecked={this.packOptions.powerOfTwo ? "checked" : ""} /></td>
+                                <td></td>
+                            </tr>
+                            
                             <tr title={I18.f("ALLOW_ROTATION_TITLE")}>
                                 <td>{I18.f("ALLOW_ROTATION")}</td>
                                 <td><input ref="allowRotation" type="checkbox" className="border-color-gray" onChange={this.onPropChanged} defaultChecked={allowRotation ? "checked" : ""} disabled={exporterRotationDisabled} /></td>
@@ -405,16 +407,7 @@ class PackProperties extends React.Component {
                                 </td>
                                 <td></td>
                             </tr>
-                            <tr title={I18.f("ALPHA_THRESHOLD_TITLE")}>
-                                <td>{I18.f("ALPHA_THRESHOLD")}</td>
-                                <td><input ref="alphaThreshold" type="number" className="border-color-gray" defaultValue={this.packOptions.alphaThreshold} min="0" max="255" onBlur={this.onPropChanged} onKeyDown={this.forceUpdate}/></td>
-                                <td></td>
-                            </tr>
-                            <tr title={I18.f("DETECT_IDENTICAL_TITLE")}>
-                                <td>{I18.f("DETECT_IDENTICAL")}</td>
-                                <td><input ref="detectIdentical" type="checkbox" className="border-color-gray" onChange={this.onPropChanged} defaultChecked={this.packOptions.detectIdentical ? "checked" : ""}/></td>
-                                <td></td>
-                            </tr>
+                            <br></br>
                             <tr title={I18.f("PACKER_TITLE")}>
                                 <td>{I18.f("PACKER")}</td>
                                 <td>
@@ -430,6 +423,19 @@ class PackProperties extends React.Component {
                                 <td>{I18.f("PACKER_METHOD")}</td>
                                 <td><PackerMethods ref="packerMethod" packer={this.state.packer} defaultMethod={this.packOptions.packerMethod} handler={this.onPropChanged}/></td>
                                 <td></td>
+                            </tr>
+                            <br></br>
+                            <tr title={I18.f("SAVE_PATH_TITLE")} style={{display: PLATFORM === 'electron' ? '' : 'none'}}>
+                                <td>{I18.f("SAVE_PATH")}</td>
+                                <td><input ref="savePath" className="border-color-gray" type="text" defaultValue={this.packOptions.savePath} onBlur={this.onExporterPropChanged} /></td>
+                                <td>
+                                    <div className="folder-btn back-800" onClick={this.selectSavePath}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colSpan="3" className="center-align">
+                                    <div className="btnexport back-800 border-color-gray color-white" onClick={this.startExport}>{I18.f("EXPORT")}</div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

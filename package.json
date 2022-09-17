@@ -1,13 +1,13 @@
 {
   "name": "free-tex-packer",
-  "displayName": "Free texture packer",
-  "version": "0.6.7",
-  "description": "Free online texture packer",
-  "url": "http://free-tex-packer.com",
-  "download": "http://free-tex-packer.com/download",
-  "webApp": "http://free-tex-packer.com/app",
+  "displayName": "Repak Atlas Creator",
+  "version": "",
+  "description": "Create Repak Atlas's with ease",
+  "url": "https://r5reloaded.com",
+  "download": "",
+  "webApp": "https://atlas.r5reloaded.com",
   "main": "src/index.js",
-  "tinifyUrl": "http://free-tex-packer.com/server/tinify.php",
+  "tinifyUrl": "",
   "localizations": [
     "en",
     "es",
@@ -57,7 +57,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/odrick/free-tex-packer.git"
+    "url": "git+https://github.com/AyeZeeBB/repak-atlas-creator.git"
   },
   "keywords": [
     "texture",
@@ -70,14 +70,14 @@
     "sprite",
     "2d"
   ],
-  "author": "Alexander Norinchak",
-  "authorSite": "https://github.com/odrick/",
-  "authorEmail": "norinchak@gmail.com",
+  "author": "AyeZee",
+  "authorSite": "https://github.com/AyeZeeBB/",
+  "authorEmail": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/odrick/free-tex-packer/issues"
+    "url": "https://github.com/AyeZeeBB/repak-atlas-creator/issues"
   },
-  "homepage": "https://github.com/odrick/free-tex-packer",
+  "homepage": "https://github.com/AyeZeeBB/repak-atlas-creator",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",

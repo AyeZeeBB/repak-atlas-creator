@@ -28,7 +28,7 @@ class MainHeader extends React.Component {
         return (
             <div className="main-header back-900 color-white">
                 <div className="main-header-app-name">
-                    <img src="static/images/logo.png" />
+                    <img src="static/images/r5ricon.png" />
                     {appInfo.displayName} {appInfo.version}
                 </div>
 
