@@ -1,0 +1,11 @@
+"textures": [
+  {{#rects}}
+  {
+    "path": "{{{name}}}",
+    "posX": {{frame.x}},
+    "posY": {{frame.y}},
+    "width": {{frame.w}},
+    "height": {{frame.h}}
+  }{{^last}},{{/last}}
+  {{/rects}}
+]
