@@ -89,9 +89,22 @@ class ImagesList extends React.Component {
     onFilesDrop(e) {
         e.preventDefault();
         
-        if(e.dataTransfer.files.length) {
-            let loader = new LocalImagesLoader();
-            loader.load(e.dataTransfer.files, null, data => this.loadImagesComplete(data));
+        var allowedExtensions = /(\.zip)$/i;
+        if(allowedExtensions.exec(e.dataTransfer.files[0].name)){
+            let file = e.dataTransfer.files[0];
+            if(file) {
+                Observer.emit(GLOBAL_EVENT.SHOW_SHADER);
+
+                let loader = new ZipLoader();
+                loader.load(file, null, data => this.loadImagesComplete(data));
+            }
+        }
+        else
+        {
+            if(e.dataTransfer.files.length) {
+                let loader = new LocalImagesLoader();
+                loader.load(e.dataTransfer.files, null, data => this.loadImagesComplete(data));
+            }
         }
         
         return false;

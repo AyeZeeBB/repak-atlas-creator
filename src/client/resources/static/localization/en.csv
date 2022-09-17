@@ -11,7 +11,7 @@ ADD_FOLDER;Add folder
 ADD_FOLDER_TITLE;Add folder
 ADD_ZIP;Add ZIP
 ADD_ZIP_TITLE;Add zipped images
-IMAGE_DROP_HELP;or drag'n'drop images here
+IMAGE_DROP_HELP;drag'n'drop images/zips here
 CLEAR;Clear
 CLEAR_TITLE;Clear all images
 DELETE;Delete
