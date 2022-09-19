@@ -117,7 +117,7 @@ class PackResults extends React.Component {
                 
                 <div className="results-view-wrapper">
                 
-                    <div ref={this.wheelRef} className="results-view-container back-white" onClick={this.clearSelection}>
+                    <div ref={this.wheelRef} className="results-view-container" onClick={this.clearSelection}>
                         <div className={this.state.playerVisible ? "block-hidden" : "block-visible"}>
                             {views}
                         </div>
@@ -126,7 +126,7 @@ class PackResults extends React.Component {
                         </div>
                     </div>
                     
-                    <div className="results-view-footer back-white border-color-gray">
+                    <div className="results-view-footer border-color-gray">
     
                         <hr/>
                         

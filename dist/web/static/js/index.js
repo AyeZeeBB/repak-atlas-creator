@@ -37900,7 +37900,7 @@ var ImagesTree_TreeItem = /*#__PURE__*/function (_React$Component3) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react_default.a.createElement("div", {
-        className: "image-list-item" + (this.props.data.img.selected ? " back-400" : "") + (this.props.data.img.current ? " image-list-item-current" : ""),
+        className: "image-list-item" + (this.props.data.img.selected ? " back-100" : "") + (this.props.data.img.current ? " image-list-item-current" : ""),
         onClick: this.onSelect
       }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "image-list-image-container"

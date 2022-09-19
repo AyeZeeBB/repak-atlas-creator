@@ -264,7 +264,7 @@ class PackProperties extends React.Component {
         let exporterTrimDisabled = exporter.allowTrim ? "" : "disabled";
         
         return (
-            <div className="props-list back-white">
+            <div className="props-list">
                 <div className="pack-properties-containter">
                     <table>
                         <tbody>
@@ -432,13 +432,11 @@ class PackProperties extends React.Component {
                                     <div className="folder-btn back-800" onClick={this.selectSavePath}></div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td colSpan="3" className="center-align">
-                                    <div className="btnexport back-800 border-color-gray color-white" onClick={this.startExport}>{I18.f("EXPORT")}</div>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
+                </div>
+                <div className="proplist-view-footer border-color-gray">
+                    <div className="btnexport color-white" onClick={this.startExport}>{I18.f("EXPORT")}</div>
                 </div>
             </div>
         );

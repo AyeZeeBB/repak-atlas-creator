@@ -116,6 +116,7 @@ class MainLayout extends React.Component {
                     {updater}
                     {shader}
                     {this.state.messageBox}
+                    
                 </div>
             </div>
         );

@@ -72,7 +72,7 @@ class TreeItem extends React.Component {
 
     render() {
         return (
-            <div className={"image-list-item" + (this.props.data.img.selected ? " back-400" : "") + (this.props.data.img.current ? " image-list-item-current" : "")} onClick={this.onSelect} >
+            <div className={"image-list-item" + (this.props.data.img.selected ? " back-1000" : "") + (this.props.data.img.current ? " image-list-item-current" : "")} onClick={this.onSelect} >
                 <div className="image-list-image-container">
                     <img src={this.props.data.img.src} className="image-list-image" />
                 </div>
@@ -135,7 +135,7 @@ class TreeView extends React.Component {
 
         return (
             <div className="tree-view" onClick={this.handleClick}>
-                <div className={'tree-view-item' + (this.props.data.selected ? " back-400" : "")}>
+                <div className={'tree-view-item' + (this.props.data.selected ? " back-1000" : "")}>
                     {arrow}
                     {folderIcon}
                     {label}
