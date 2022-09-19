@@ -267,7 +267,7 @@ module.exports = !__webpack_require__(5)(function () {
 /* 10 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"free-tex-packer\",\"displayName\":\"Repak Atlas Creator\",\"version\":\"\",\"description\":\"Create Repak Atlas's with ease\",\"url\":\"https://r5reloaded.com\",\"download\":\"\",\"webApp\":\"https://atlas.r5reloaded.com\",\"main\":\"src/index.js\",\"tinifyUrl\":\"\",\"localizations\":[\"en\",\"es\",\"ru\",\"zh-cn\",\"de\"],\"contributors\":[{\"name\":\"Alexander Norinchak\",\"homepage\":\"https://github.com/odrick\"},{\"name\":\"Rubén\",\"homepage\":\"https://github.com/rtalon83\"},{\"name\":\"Querijn Heijmans\",\"homepage\":\"https://github.com/Querijn\"},{\"name\":\"Timo Kämäräinen\",\"homepage\":\"https://github.com/qtiki\"},{\"name\":\"Andrzej Kilijański\",\"homepage\":\"https://github.com/and3md\"},{\"name\":\"TheDarkMen3000\",\"homepage\":\"https://github.com/TheDarkMen3000\"},{\"name\":\"wen-\",\"homepage\":\"https://github.com/wen-\"},{\"name\":\"Davide Matta aka DadeKuma\",\"homepage\":\"https://github.com/DadeKuma\"}],\"scripts\":{\"start\":\"webpack-dev-server --host 127.0.0.1 --port 4000\",\"start-electron\":\"webpack-dev-server --host 127.0.0.1 --port 4000 --platform electron\",\"build-web\":\"webpack --build --platform web\",\"build-electron\":\"webpack --build --platform electron\"},\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/AyeZeeBB/repak-atlas-creator.git\"},\"keywords\":[\"texture\",\"packer\",\"texturepacker\",\"texture-packer\",\"sprites\",\"spritesheet\",\"export\",\"sprite\",\"2d\"],\"author\":\"AyeZee\",\"authorSite\":\"https://github.com/AyeZeeBB/\",\"authorEmail\":\"\",\"license\":\"ISC\",\"bugs\":{\"url\":\"https://github.com/AyeZeeBB/repak-atlas-creator/issues\"},\"homepage\":\"https://github.com/AyeZeeBB/repak-atlas-creator\",\"devDependencies\":{\"@babel/core\":\"^7.6.4\",\"@babel/preset-env\":\"^7.6.3\",\"@babel/preset-react\":\"^7.7.4\",\"@jvitela/mustache-wax\":\"^1.0.1\",\"babel-loader\":\"^8.0.5\",\"babel-plugin-transform-runtime\":\"^6.23.0\",\"babel-polyfill\":\"^6.23.0\",\"babel-preset-es2015\":\"^6.24.0\",\"babel-preset-stage-0\":\"^6.22.0\",\"babel-runtime\":\"^6.23.0\",\"chokidar\":\"^2.0.4\",\"copy-webpack-plugin\":\"^4.6.0\",\"electron\":\"^4.0.4\",\"eventemitter3\":\"^3.0.1\",\"file-saver\":\"^2.0.0\",\"glob\":\"^7.1.1\",\"json-loader\":\"^0.5.4\",\"jszip\":\"^3.1.3\",\"maxrects-packer\":\"^2.7.2\",\"mustache\":\"^3.0.1\",\"optimist\":\"^0.6.1\",\"plist\":\"^3.0.1\",\"react\":\"^16.8.1\",\"react-dom\":\"^16.8.1\",\"webpack\":\"^4.46.0\",\"webpack-cli\":\"^3.3.12\",\"webpack-dev-server\":\"^3.1.14\",\"xml2js\":\"^0.4.19\"}}");
+module.exports = JSON.parse("{\"name\":\"free-tex-packer\",\"displayName\":\"RPAC - Repak Atlas Creator\",\"version\":\"\",\"description\":\"Create Repak Atlas's with ease\",\"url\":\"https://r5reloaded.com\",\"download\":\"\",\"webApp\":\"https://atlas.r5reloaded.com\",\"main\":\"src/index.js\",\"tinifyUrl\":\"\",\"localizations\":[\"en\",\"es\",\"ru\",\"zh-cn\",\"de\"],\"contributors\":[{\"name\":\"Alexander Norinchak\",\"homepage\":\"https://github.com/odrick\"},{\"name\":\"Rubén\",\"homepage\":\"https://github.com/rtalon83\"},{\"name\":\"Querijn Heijmans\",\"homepage\":\"https://github.com/Querijn\"},{\"name\":\"Timo Kämäräinen\",\"homepage\":\"https://github.com/qtiki\"},{\"name\":\"Andrzej Kilijański\",\"homepage\":\"https://github.com/and3md\"},{\"name\":\"TheDarkMen3000\",\"homepage\":\"https://github.com/TheDarkMen3000\"},{\"name\":\"wen-\",\"homepage\":\"https://github.com/wen-\"},{\"name\":\"Davide Matta aka DadeKuma\",\"homepage\":\"https://github.com/DadeKuma\"}],\"scripts\":{\"start\":\"webpack-dev-server --host 127.0.0.1 --port 4000\",\"start-electron\":\"webpack-dev-server --host 127.0.0.1 --port 4000 --platform electron\",\"build-web\":\"webpack --build --platform web\",\"build-electron\":\"webpack --build --platform electron\"},\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/AyeZeeBB/repak-atlas-creator.git\"},\"keywords\":[\"texture\",\"packer\",\"texturepacker\",\"texture-packer\",\"sprites\",\"spritesheet\",\"export\",\"sprite\",\"2d\"],\"author\":\"AyeZee\",\"authorSite\":\"https://github.com/AyeZeeBB/\",\"authorEmail\":\"\",\"license\":\"ISC\",\"bugs\":{\"url\":\"https://github.com/AyeZeeBB/repak-atlas-creator/issues\"},\"homepage\":\"https://github.com/AyeZeeBB/repak-atlas-creator\",\"devDependencies\":{\"@babel/core\":\"^7.6.4\",\"@babel/preset-env\":\"^7.6.3\",\"@babel/preset-react\":\"^7.7.4\",\"@jvitela/mustache-wax\":\"^1.0.1\",\"babel-loader\":\"^8.0.5\",\"babel-plugin-transform-runtime\":\"^6.23.0\",\"babel-polyfill\":\"^6.23.0\",\"babel-preset-es2015\":\"^6.24.0\",\"babel-preset-stage-0\":\"^6.22.0\",\"babel-runtime\":\"^6.23.0\",\"chokidar\":\"^2.0.4\",\"copy-webpack-plugin\":\"^4.6.0\",\"electron\":\"^4.0.4\",\"eventemitter3\":\"^3.0.1\",\"file-saver\":\"^2.0.0\",\"glob\":\"^7.1.1\",\"json-loader\":\"^0.5.4\",\"jszip\":\"^3.1.3\",\"maxrects-packer\":\"^2.7.2\",\"mustache\":\"^3.0.1\",\"optimist\":\"^0.6.1\",\"plist\":\"^3.0.1\",\"react\":\"^16.8.1\",\"react-dom\":\"^16.8.1\",\"webpack\":\"^4.46.0\",\"webpack-cli\":\"^3.3.12\",\"webpack-dev-server\":\"^3.1.14\",\"xml2js\":\"^0.4.19\"}}");
 
 /***/ }),
 /* 11 */
@@ -38666,7 +38666,7 @@ var ImagesList_ImagesList = /*#__PURE__*/function (_React$Component) {
     key: "renderWebButtons",
     value: function renderWebButtons() {
       return /*#__PURE__*/react_default.a.createElement("span", null, /*#__PURE__*/react_default.a.createElement("div", {
-        className: "btn back-800 border-color-gray color-white file-upload",
+        className: "btnimagelist color-white file-upload",
         title: utils_I18.f("ADD_IMAGES_TITLE")
       }, utils_I18.f("ADD_IMAGES"), /*#__PURE__*/react_default.a.createElement("input", {
         type: "file",
@@ -38675,7 +38675,7 @@ var ImagesList_ImagesList = /*#__PURE__*/function (_React$Component) {
         accept: "image/png,image/jpg,image/jpeg,image/gif",
         onChange: this.addImages
       })), /*#__PURE__*/react_default.a.createElement("div", {
-        className: "btn back-800 border-color-gray color-white file-upload",
+        className: "btnimagelist color-white file-upload",
         title: utils_I18.f("ADD_ZIP_TITLE")
       }, utils_I18.f("ADD_ZIP"), /*#__PURE__*/react_default.a.createElement("input", {
         type: "file",
@@ -38688,11 +38688,11 @@ var ImagesList_ImagesList = /*#__PURE__*/function (_React$Component) {
     key: "renderElectronButtons",
     value: function renderElectronButtons() {
       return /*#__PURE__*/react_default.a.createElement("span", null, /*#__PURE__*/react_default.a.createElement("div", {
-        className: "btn back-800 border-color-gray color-white",
+        className: "btnimagelist color-white",
         onClick: this.addImagesFs,
         title: utils_I18.f("ADD_IMAGES_TITLE")
       }, utils_I18.f("ADD_IMAGES")), /*#__PURE__*/react_default.a.createElement("div", {
-        className: "btn back-800 border-color-gray color-white",
+        className: "btnimagelist color-white",
         onClick: this.addFolderFs,
         title: utils_I18.f("ADD_FOLDER_TITLE")
       }, utils_I18.f("ADD_FOLDER")));
@@ -38706,18 +38706,18 @@ var ImagesList_ImagesList = /*#__PURE__*/function (_React$Component) {
         className: "image-drop-help"
       }, utils_I18.f("IMAGE_DROP_HELP"));
       return /*#__PURE__*/react_default.a.createElement("div", {
-        className: "images-list border-color-gray back-white"
+        className: "images-list border-color-gray"
       }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "images-controllers border-color-gray"
       },  true ? this.renderWebButtons() : undefined, /*#__PURE__*/react_default.a.createElement("div", {
-        className: "btn back-800 border-color-gray color-white",
+        className: "btnimagelist color-white",
         onClick: this.deleteSelectedImages,
         title: utils_I18.f("DELETE_TITLE")
       }, utils_I18.f("DELETE")), /*#__PURE__*/react_default.a.createElement("div", {
-        className: "btn back-800 border-color-gray color-white",
+        className: "btnimagelist color-white",
         onClick: this.clear,
         title: utils_I18.f("CLEAR_TITLE")
-      }, utils_I18.f("CLEAR")), /*#__PURE__*/react_default.a.createElement("hr", null)), /*#__PURE__*/react_default.a.createElement("div", {
+      }, utils_I18.f("CLEAR"))), /*#__PURE__*/react_default.a.createElement("div", {
         ref: "imagesTree",
         className: "images-tree"
       }, /*#__PURE__*/react_default.a.createElement(ui_ImagesTree, {
@@ -38805,7 +38805,7 @@ var MainHeader_MainHeader = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "main-header-app-name"
       }, /*#__PURE__*/react_default.a.createElement("img", {
-        src: "static/images/r5ricon.png"
+        src: "static/images/icons8-repeat-64.png"
       }), package_0.displayName, " ", package_0.version), /*#__PURE__*/react_default.a.createElement("div", {
         className: "main-header-about",
         onClick: this.showAbout
