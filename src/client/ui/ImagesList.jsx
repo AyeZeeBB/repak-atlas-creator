@@ -497,12 +497,12 @@ class ImagesList extends React.Component {
     renderWebButtons() {
         return (
             <span>
-                <div className="btn back-800 border-color-gray color-white file-upload" title={I18.f("ADD_IMAGES_TITLE")}>
+                <div className="btnimagelist color-white file-upload" title={I18.f("ADD_IMAGES_TITLE")}>
                     {I18.f("ADD_IMAGES")}
                     <input type="file" ref="addImagesInput" multiple accept="image/png,image/jpg,image/jpeg,image/gif" onChange={this.addImages} />
                 </div>
     
-                <div className="btn back-800 border-color-gray color-white file-upload" title={I18.f("ADD_ZIP_TITLE")}>
+                <div className="btnimagelist color-white file-upload" title={I18.f("ADD_ZIP_TITLE")}>
                     {I18.f("ADD_ZIP")}
                     <input type="file" ref="addZipInput" accept=".zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed" onChange={this.addZip} />
                 </div>
@@ -513,11 +513,11 @@ class ImagesList extends React.Component {
     renderElectronButtons() {
         return (
             <span>
-                <div className="btn back-800 border-color-gray color-white" onClick={this.addImagesFs} title={I18.f("ADD_IMAGES_TITLE")}>
+                <div className="btnimagelist color-white" onClick={this.addImagesFs} title={I18.f("ADD_IMAGES_TITLE")}>
                     {I18.f("ADD_IMAGES")}
                 </div>
     
-                <div className="btn back-800 border-color-gray color-white" onClick={this.addFolderFs} title={I18.f("ADD_FOLDER_TITLE")}>
+                <div className="btnimagelist color-white" onClick={this.addFolderFs} title={I18.f("ADD_FOLDER_TITLE")}>
                     {I18.f("ADD_FOLDER")}
                 </div>
             </span>
@@ -530,7 +530,7 @@ class ImagesList extends React.Component {
         let dropHelp = Object.keys(this.state.images).length > 0 ? null : (<div ref="dropHelp" className="image-drop-help">{I18.f("IMAGE_DROP_HELP")}</div>);
 
         return (
-            <div className="images-list border-color-gray back-white">
+            <div className="images-list border-color-gray">
                 
                 <div className="images-controllers border-color-gray">
                     
@@ -538,14 +538,14 @@ class ImagesList extends React.Component {
                         PLATFORM === "web" ? (this.renderWebButtons()) : (this.renderElectronButtons())
                     }
 
-                    <div className="btn back-800 border-color-gray color-white" onClick={this.deleteSelectedImages} title={I18.f("DELETE_TITLE")}>
+                    <div className="btnimagelist color-white" onClick={this.deleteSelectedImages} title={I18.f("DELETE_TITLE")}>
                         {I18.f("DELETE")}
                     </div>
-                    <div className="btn back-800 border-color-gray color-white" onClick={this.clear} title={I18.f("CLEAR_TITLE")}>
+                    <div className="btnimagelist color-white" onClick={this.clear} title={I18.f("CLEAR_TITLE")}>
                         {I18.f("CLEAR")}
                     </div>
                     
-                    <hr/>
+                    
 
                 </div>
                 

@@ -37900,7 +37900,7 @@ var ImagesTree_TreeItem = /*#__PURE__*/function (_React$Component3) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react_default.a.createElement("div", {
-        className: "image-list-item" + (this.props.data.img.selected ? " back-100" : "") + (this.props.data.img.current ? " image-list-item-current" : ""),
+        className: "image-list-item" + (this.props.data.img.selected ? " back-1000" : "") + (this.props.data.img.current ? " image-list-item-current" : ""),
         onClick: this.onSelect
       }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "image-list-image-container"
@@ -37983,7 +37983,7 @@ var ImagesTree_TreeView = /*#__PURE__*/function (_React$Component4) {
         className: "tree-view",
         onClick: this.handleClick
       }, /*#__PURE__*/react_default.a.createElement("div", {
-        className: 'tree-view-item' + (this.props.data.selected ? " back-400" : "")
+        className: 'tree-view-item' + (this.props.data.selected ? " back-1000" : "")
       }, arrow, folderIcon, label), /*#__PURE__*/react_default.a.createElement("div", {
         className: containerClass
       }, children));
@@ -38801,7 +38801,7 @@ var MainHeader_MainHeader = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react_default.a.createElement("div", {
-        className: "main-header back-900 color-white"
+        className: "main-header color-white"
       }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "main-header-app-name"
       }, /*#__PURE__*/react_default.a.createElement("img", {
@@ -39202,7 +39202,7 @@ var PackProperties_PackProperties = /*#__PURE__*/function (_React$Component) {
       var allowTrim = this.packOptions.allowTrim && exporter.allowTrim;
       var exporterTrimDisabled = exporter.allowTrim ? "" : "disabled";
       return /*#__PURE__*/react_default.a.createElement("div", {
-        className: "props-list back-white"
+        className: "props-list"
       }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "pack-properties-containter"
       }, /*#__PURE__*/react_default.a.createElement("table", null, /*#__PURE__*/react_default.a.createElement("tbody", null, /*#__PURE__*/react_default.a.createElement("tr", {
@@ -39450,13 +39450,12 @@ var PackProperties_PackProperties = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/react_default.a.createElement("td", null, /*#__PURE__*/react_default.a.createElement("div", {
         className: "folder-btn back-800",
         onClick: this.selectSavePath
-      }))), /*#__PURE__*/react_default.a.createElement("tr", null, /*#__PURE__*/react_default.a.createElement("td", {
-        colSpan: "3",
-        className: "center-align"
+      })))))), /*#__PURE__*/react_default.a.createElement("div", {
+        className: "proplist-view-footer border-color-gray"
       }, /*#__PURE__*/react_default.a.createElement("div", {
-        className: "btnexport back-800 border-color-gray color-white",
+        className: "btnexport color-white",
         onClick: this.startExport
-      }, utils_I18.f("EXPORT"))))))));
+      }, utils_I18.f("EXPORT"))));
     }
   }], [{
     key: "i",
@@ -40224,7 +40223,7 @@ var PackResults_PackResults = /*#__PURE__*/function (_React$Component) {
         className: "results-view-wrapper"
       }, /*#__PURE__*/react_default.a.createElement("div", {
         ref: this.wheelRef,
-        className: "results-view-container back-white",
+        className: "results-view-container",
         onClick: this.clearSelection
       }, /*#__PURE__*/react_default.a.createElement("div", {
         className: this.state.playerVisible ? "block-hidden" : "block-visible"
@@ -40236,7 +40235,7 @@ var PackResults_PackResults = /*#__PURE__*/function (_React$Component) {
         start: this.state.playerVisible,
         textureBack: this.state.textureBack
       }))), /*#__PURE__*/react_default.a.createElement("div", {
-        className: "results-view-footer back-white border-color-gray"
+        className: "results-view-footer border-color-gray"
       }, /*#__PURE__*/react_default.a.createElement("hr", null), /*#__PURE__*/react_default.a.createElement("table", null, /*#__PURE__*/react_default.a.createElement("tbody", null, /*#__PURE__*/react_default.a.createElement("tr", null, this.textureBackColors.map(function (name) {
         return /*#__PURE__*/react_default.a.createElement("td", {
           key: "back-color-btn-" + name
