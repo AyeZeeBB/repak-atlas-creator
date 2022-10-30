@@ -1,0 +1,140 @@
+OK;TAMAM
+YES;EVET
+NO;HAYIR
+CANCEL;IPTAL
+SAVE;KAYDET
+IMAGES;Resimler
+LANGUAGE;Dil:
+ADD_IMAGES;Resim ekle
+ADD_IMAGES_TITLE;Resim ekle
+ADD_FOLDER;Klasör ekle
+ADD_FOLDER_TITLE;Klasör ekle
+ADD_ZIP;ZIP Ekle
+ADD_ZIP_TITLE;Resimleri ZIP halinde ekle
+IMAGE_DROP_HELP;Resimleri/ZIPleri buraya sürükle
+CLEAR;Temizle
+CLEAR_TITLE;Tüm resimleri temizle
+DELETE;Sil
+DELETE_TITLE;Seçili resimleri sil
+REPLACE_FILES_PROMPT;Varolan dosyayı değiştir?
+DISPLAY_OUTLINES;Dış hatlar:
+SCALE;Boyut:
+SHOW_SPRITES;Animasyonlar
+SPRITE_NAME;Sprite ismi:
+ANIMATION_SPEED;Animasyon hızı:
+TEXTURE_NAME;Texture ismi:
+TEXTURE_NAME_TITLE;Dışarı aktarılacak texture ismi
+TEXTURE_FORMAT;Texture türü:
+TEXTURE_FORMAT_TITLE;Dışarı aktarılacak texture türü
+REMOVE_FILE_EXT;Dosya uzantısını kaldır:
+REMOVE_FILE_EXT_TITLE;Dosya uzantısını kaldır
+PREPEND_FOLDER;Klasör adını öne ekle:
+PREPEND_FOLDER_TITLE;Klasör adını dosya adının önüne ekle
+BASE64_EXPORT_TITLE;base64 formatında dışarı aktar (eğer mümkünse)
+BASE64_EXPORT;base64 formatında aktar
+TINIFY_TITLE;Tinify https://tinypng.com kullanır
+TINIFY;Tinify
+TINIFY_KEY_TITLE;TinyPNG anahtarı https://tinypng.com/developers 
+TINIFY_KEY;TinyPNG anahtarı
+DISABLE_SMOOTHING;Yumuşatma devredışı
+DISABLE_SMOOTHING_TITLE;Resim yumuşatmayı devredışı bırakır
+SCALE;Boyut:
+SCALE_TITLE;Ana texture boyutu
+FILTER;Filtre:
+FILTER_TITLE;Son hali için filtreler
+FORMAT;Format:
+FORMAT_TITLE;Dışarı aktarılacak format
+FILE_NAME;Dosya adı:
+FILE_NAME_TITLE;Dosya
+SAVE_PATH;Kayıt yolu
+SAVE_PATH_TITLE;Sonuçları şu yola
+WIDTH;Genişlik:
+WIDTH_TITLE;Maksimum texture genişliği
+HEIGHT;Yükseklik:
+HEIGHT_TITLE;Maksimum texture yüksekliği
+FIXED_SIZE;Düzenlenmiş boyut:
+POWER_OF_TWO;Dokuyu ikile:
+POWER_OF_TWO_TITLE;İkili texture boyutu
+FIXED_SIZE_TITLE;Düzenlenmiş boyut
+PADDING;Dolgu:
+PADDING_TITLE;Dolgu
+EXTRUDE;Extrude:
+EXTRUDE_TITLE;Sprites border pixels extrude size
+ALLOW_ROTATION;Rotasyona izin ver:
+ALLOW_ROTATION_TITLE;Rotasyona izin ver
+ALLOW_TRIM;Kesmeye izin ver:
+ALLOW_TRIM_TITLE;Kesmeye izin ver
+ALPHA_THRESHOLD;Alpha kanalı:
+ALPHA_THRESHOLD_TITLE;Alpha kanalı değeri
+TRIM_MODE;Kesme modu:
+TRIM_MODE_TITLE;Kesme modları
+DETECT_IDENTICAL;Aynı olanı tespit et:
+DETECT_IDENTICAL_TITLE;Aynı olanı tespit et
+PACKER;Paketleyici:
+PACKER_TITLE;Paketleyici
+PACKER_METHOD;Method:
+PACKER_METHOD_TITLE;Paketleyici methodu
+EXPORT;Dışarı aktar
+PLEASE_WAIT;Lütfen bekleyin...
+INVALID_SIZE_ERROR;Geçersiz boyut. Min: %sx%s
+NO_IMAGES_ERROR;Lütfen önce bir resim ekleyin.
+CLEAR_WARNING;Tüm resimleri silmek istediğinden emin misin?
+INVALID_ZIP_ERROR;Geçersiz ZIP dosyası
+NO_TINIFY_KEY_ERROR;Lütfen TinyPNG anahtarını gir https://tinypng.com/developers
+TINIFY_ERROR;Tinify hatası: %s
+TINIFY_ERROR_COMMON;Tinify hatası...
+OLD_BROWSER_MESSAGE1;Üzgünüm, kullandığın tarayıcı bu aracı kullanmak için çok yaşlı.
+OLD_BROWSER_MESSAGE2;Lütfen modern tarayıcılardan birini dene:
+ABOUT_HOMEPAGE;Ana Sayfa:
+ABOUT_SOURCES;Kaynaklar:
+ABOUT_BUGS;Bug/Hata takibi:
+ABOUT_APPS;Uygulamayı indir:
+ABOUT_WEB;Web versiyonu:
+ABOUT_LIBS;Kullanılan kütüphaneler:
+ABOUT_GULP_VERSION;Gulp modülü:
+ABOUT_WEBPACK_VERSION;Webpack plugini:
+ABOUT_CONTRIBUTORS;Katkıda bulunanlar:
+EXPORTER_ERROR;Dışarı aktarma hatası: %s
+CUSTOM_EXPORTER_ERROR;Şablon hatası: %s
+FILE_EXT;Dosya türü:
+DOCUMENTATION;Dökümantasyon
+SAVE_CHANGES_CONFIRM;Proje değişikliklerini kaydet?
+MENU_FILE;Dosya
+MENU_FILE_PROJECT_NEW;Yeni proje
+MENU_FILE_PROJECT_LOAD;Projeyi aç
+MENU_FILE_PROJECT_LOAD_RECENT;Son kullanılan
+MENU_FILE_PROJECT_SAVE;Projeyi kaydet
+MENU_FILE_PROJECT_SAVE_AS;Projeyi şu şekilde kaydet...
+MENU_FILE_PREFERENCES_SAVE;Tercihleri kaydet
+MENU_FILE_INSTALL_CLI;CLI Yükle
+MENU_FILE_EXIT;Çıkış
+MENU_ACTIONS;İşlemler
+MENU_ACTIONS_ADD_IMAGES;Resim ekle
+MENU_ACTIONS_ADD_FOLDER;Klasör ekle
+MENU_ACTIONS_SELECT_ALL;Hepsini seç
+MENU_ACTIONS_DELETE;Sil
+MENU_ACTIONS_CLEAR;Temizle
+MENU_ACTIONS_EXPORT;Dışarı aktar
+MENU_TOOLS;Araçlar
+MENU_TOOLS_SPLITTER;Projeyi pencerede aç
+MENU_LANGUAGE;Dil
+MENU_HELP;Yardım
+MENU_HELP_ABOUT;Hakkında
+UPDATER_TITLE;Yeni versiyon mevcut: %s
+CLOSE;Kapat
+INSTALL;Yükle
+SKIP_VERSION;Atla
+SKIP_VERSION_CONFIRM;Bu sürümü atlamak ve birdaha hatırlatmamı istemediğinden emin misin?
+CONTEXT_MENU_UNDO;Geri al
+CONTEXT_MENU_REDO;İleri al
+CONTEXT_MENU_CUT;Kes
+CONTEXT_MENU_COPY;Kopyala
+CONTEXT_MENU_PASTE;Yapıştır
+CONTEXT_MENU_DELETE;Sil
+CONTEXT_MENU_SELECT_ALL;Hepsini seç
+SPLIT;İkiye ayır
+SELECT_TEXTURE;Texture
+SELECT_DATA_FILE;Veri dosyası
+SPLITTER;Pencerede aç
+SPLITTER_ERROR_NO_FRAMES;Sprite bulunamadı, muhtemelen atlas formatı hatalı.
+HOLD_TRIM;Kesmeyi tut:
